@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Tamagotchi Tori</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Bitcount+Single+Ink:wght@100..900&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <div class="egg">
+    <div class="main-container">
+        <br>
+        <h1>o</h1>
+        <br><br>
+        <h2>Tori <br><br> Tamagotchi</h2>
+        <br>
+        <div class="create-section">
+            <h3>🌳 Adopt a Virtual Bird</h3>
+            <p class="pet-count">Husdjur: <span id="petCount">0</span>/4</p>
+            <div class="form-group">
+                <input type="text" id="petName" placeholder="Name (or leave empty for random)">
+            </div>
+            <div class="form-group">
+                <select id="animalType">
+                    <option value="">Choose Tori (or leave for random)</option>
+                    <option value="parrot">🦜 Parrot</option>
+                    <option value="owl">🦉 Owl</option>
+                    <option value="crow">🐦‍⬛ Crow</option>
+                    <option value="bird">🐦 Bird</option>
+                </select>
+            </div>
+            <button class="btn-create" id="createBtn" onclick="createNewPet()"></button>
+        </div>
+
+        <div class="pets-grid" id="petsGrid"></div>
+
+        <div class="history-section">
+            <div class="history-log" id="historyLog">
+                <div class="no-history">No Activity Yet..</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<footer>
+
+        <div class="logo-1container">
+            <img src="tamagotchi_logo.png" class="small-logo" alt="tamagotchi logo">
+            <img src="tamagotchi_logo.png" class="small-logo" alt="tamagotchi logo">
+        </div>
+        <div class="logo-2container">
+            <img src="tamagotchi_logo.png" class="small-logo" alt="tamagotchi logo">
+        </div>
+<br><br><br>
+</div>
+<br><br>
+    <p class="footer">&copy; 2026 Victoria "adTori" Friberg. All rights reserved.</p>
+    
+</footer>
+
+</html>
